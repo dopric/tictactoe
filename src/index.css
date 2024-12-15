@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  
+}
+.home-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.game-board{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  margin: 20px;
+}
+
+button.board-item{
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: #4c77ce;
+  color: white;
+  /* border: none; */
+  cursor: pointer;
+  padding: 5px 15px ;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+  min-width: 65px;
+  min-height: 55px;
+}
+
+button.board-item:hover{
+  background-color: #a8beeb;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.status-btn{
+  border-radius: 5px;
+  padding: 10px;
+  width: 215px;
+  background-color: #ce9428;
+  color:white;
+  font-weight: bold;
+}
+.status-btn:disabled{
+display: none;
+}
+
+.board-item:disabled{
+  background-color: #e41150;
+  cursor: not-allowed;
+}
+button.board-item:disabled{
+  background-color: #4c77ce;
+  cursor: not-allowed;
+}
+
+.board-status button{
+  width: 100%;
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: #ce9428;
+  color: white;
+  /* border: none; */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+}
+
+.board-status button:hover{
+  background-color: #ddd1ba;
+  color: #4c77ce;
+}
+
+.restart-btn{
+  margin: 5px;
+  background-color: darkred;
+}
+
+.quit-btn{
+  margin: 5px;
+  background-color: darkblue;
+}
